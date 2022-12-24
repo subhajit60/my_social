@@ -1,0 +1,260 @@
+/* DashBorad-layout */
+
+.DashBorad-layout{
+    /* border: 2px solid red; */
+     min-height: 80vh;
+     width: 100%;
+     display: grid;
+     grid-gap: 10px;
+     grid-template-columns: 0.5fr 1fr 0.5fr;
+     grid-template-rows:repeat(4, 0.5fr) ;
+ }
+ .box{
+     background-color: #fff;
+     border-radius: 8px;
+ }
+ 
+ /* remover background color */
+ .rm-bg{
+     background: none;
+     border-radius: 8px;
+     border: 2px solid rgba(128, 128, 128, 0.853);
+ }
+ .box_shadow{
+     box-shadow: 1px 1px 15px rgba(84, 78, 78, 0.51);
+ }
+ .b1{
+     grid-row: 1/3;
+    
+ }
+ .b2{
+     grid-row: 1/-1;
+   
+ }
+ .b3{
+     grid-row: 1/3;
+ }
+ .b4{
+     grid-row: 3/5;
+    
+ }
+ .b5{
+     grid-row: 3/5;
+ }
+ /* Profile section */
+ .m-Profile{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ 
+ }
+
+ .m-Profile img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin: 2px;
+    margin-left: 15px;
+}
+
+
+
+ .m-Profile> img{
+     margin-top: 30px;
+     box-shadow: 1px 1px 12px rgba(55, 51, 51, 0.71);
+      
+ }
+ .m-Profile > #TAG_NAME{
+     color: rgb(123, 122, 122);
+     font-size: 12px;
+     font-weight: 600;
+     margin-top: 2px;
+     padding: 1px;
+ }
+ #User_name{
+     font-size: 15px;
+     padding: 1px;
+ }
+ #City_name{
+     padding: 4px;
+ }
+ #About-User{
+     font-size: 14px;
+     padding: 4px;
+     margin: 0px 8px 0px 8px;
+     text-align: center;
+     font-weight: 500;
+ }
+ #user-social-data{
+     margin-top: 10px;
+    /* background-color: red; */
+    width: 100%;
+    height: 20%;
+    display: flex;
+    
+ }
+ .social-data-box{
+     min-width: 30%;
+     /* background-color: rgb(51, 214, 84); */
+     padding: 3px;
+     margin-left: 2px;
+     border-right: 2px ;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     
+ }
+ 
+ /* TimeLine section */
+ .m-Cont-timeLine{   
+ 
+ }
+ 
+ 
+ 
+ /* Trends */
+ .m-Trends{
+    
+ }
+ .nav-trens{
+     height: 15%;
+     padding: 10px;
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 10px;
+     border-bottom: 2px solid #333;
+     font-weight: 800;
+ }
+ .Trend-box{
+   height: 210px;
+   width: 100%;
+   margin-bottom: 5px;
+   overflow-y: scroll;
+ }
+ .Trend-item{
+     display: flex;
+     flex-direction: column;
+     padding:  0px 10px 0px 15px;
+     border-bottom: 2px solid gray;
+     margin-bottom: 5px;
+ 
+ }
+  .trend-name{
+     font-size: 14px;
+     font-weight: 700;
+ 
+ }
+  .trend-id{
+     font-size: 12px;
+     font-weight: 600;
+     color: gray;
+ 
+ }
+ 
+ .Trends-end{
+   height: auto;
+   text-align: center;
+ }
+ 
+ 
+ /* Actions  */
+ .m-Actions{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap:10px;
+  grid-row-gap: 16px;
+ }
+ .m-Actions> .m-a-cont{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ /* You-should-Follow */
+ 
+ .m-YouShouldFollow{
+ 
+ }
+ .You-s-Follow-box{
+     height: 210px;
+     width: 100%;
+     margin-bottom: 5px;
+     overflow-y: scroll;
+   }
+   .Y-s-f-user-img img{
+     height: 50px;
+     width: 50px;
+     border-radius: 50%;
+     margin-left: 5px;
+    
+    
+   }
+   .y-s-f-Data{
+     display: flex;
+     flex-direction: column;
+     padding: 2px;
+    
+   }
+ .nav-You-s-Follow{
+     height: 15%;
+     padding: 10px;
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 10px;
+     border-bottom: 2px solid #333;
+     font-weight: 800;
+ }
+ 
+ .You-s-Follow-item{
+   display: grid;
+   grid-template-columns: 0.3fr 1fr 0.5fr;
+   margin-top: 5px;
+ 
+ }
+  .You-s-Follow-name{
+     font-size: 14px;
+     font-weight: 700;
+ 
+ }
+  .You-s-Follow-id{
+     font-size: 12px;
+     font-weight: 600;
+     color: gray;
+ 
+ }
+ .You-s-Follow-end{
+     text-align: center;
+ }
+ #y-s-f-action{
+  margin-right: 8px;
+   
+ 
+ }
+ #y-s-f-action>input[type="button"]{
+     background-color: rgb(67, 137, 216);
+     border: none;
+     width: 70px;
+     height: 35px;
+     border-radius: 14px;
+     color: #fff;
+     font-weight: 700;
+ 
+ }
+ #y-s-f-action>input[type="button"]:hover{
+     background-color:#fff;
+     color:black;
+     border: 2px solid   rgb(67, 137, 216);;
+ }
+ 
+ 
+ /* other action */
+ 
+ .left-boder{
+     border-left: 2px solid rgba(111, 110, 110, 0.616);
+ }
+ .fixed-box{
+     position: fixed;
+ }

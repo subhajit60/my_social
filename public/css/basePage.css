@@ -1,0 +1,64 @@
+/* version 1.0.0 */
+
+.mainOuter{
+    display: grid;
+    grid-template-columns: 0.18fr 1fr;
+    height: 110vh;
+    width: 100%;
+}
+
+.boder{
+    border: 2px solid lightgray;
+}
+
+.rightCont{
+    background-color: rgb(197, 222, 243);
+
+}
+.leftCont{
+  background-color: #fff;
+  
+}
+.navPannel{
+    margin-top: 80px;
+}
+.navPannel>*{
+    padding: 4px;
+    font-size: 22px;
+    margin-left: 8px;
+    margin-bottom: 20px;
+}
+.np{
+    display: flex;
+   
+    align-items: center;
+}
+.np>p{
+    margin-left: 20px;
+
+  
+}
+
+
+.rightCont{
+    display: flex;
+    flex-direction: column;
+   
+   
+}
+
+.rightContImg>img{
+    height: 35vh;
+    width: 100%;
+}
+
+
+
+.main-DashBorad{
+    height:inherit;
+    width: 75%;
+    position: absolute;
+    top: 30%;
+    left: 20.5%;
+ 
+}
